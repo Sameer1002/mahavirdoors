@@ -1,0 +1,14 @@
+{
+  "title": "Mahavir Doors | Wooden Door Manufacturer in Nashik",
+  "description": "Mahavir Doors manufactures premium laminated, WPC, safety, and plywood doors in Ambad MIDC, Nashik. Custom sizes, factory-direct quality, and delivery across Maharashtra.",
+  "language": "en",
+  "robots": {
+    "index": true
+  },
+  "icons": {
+    "icon": "assets/logo-sm.jpeg"
+  },
+  "openGraph": {
+    "image": "assets/logo-sm.jpeg"
+  }
+}

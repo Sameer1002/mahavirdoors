@@ -1,14 +1,14 @@
 import { defineConfig, type HtmlTagDescriptor, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import fs from 'node:fs'
 import path from 'node:path'
-
-import siteConfiguration from './.figma/make/site.json' // site indexing, title, and description
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   // .figma/make/deploy-preview passes `--mode development` for cached-preview builds.
   const emitSourcemaps = mode === 'development'
+  const siteConfiguration = loadSiteConfiguration()
 
   return {
     base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/',
@@ -41,6 +41,24 @@ export default defineConfig(({ mode }) => {
     },
   }
 })
+
+function loadSiteConfiguration(): FigmaSiteConfiguration {
+  const candidates = [
+    path.resolve(__dirname, '.figma/make/site.json'),
+    path.resolve(__dirname, 'site.json'),
+  ]
+
+  for (const file of candidates) {
+    if (!fs.existsSync(file)) continue
+    try {
+      return JSON.parse(fs.readFileSync(file, 'utf8')) as FigmaSiteConfiguration
+    } catch {
+      continue
+    }
+  }
+
+  return {}
+}
 
 type FigmaSiteConfiguration = {
   title?: string
