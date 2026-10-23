@@ -10,9 +10,9 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
           <div>
             <div className="text-xs font-bold tracking-widest uppercase mb-3 text-golden">Our Story</div>
-            <h2 className="text-3xl font-bold text-charcoal mb-6 gold-underline font-heading">Mahaveer Doors — A Legacy of Craftsmanship</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6 gold-underline font-heading">Mahavir Doors — A Legacy of Craftsmanship</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Mahaveer Doors is a leading manufacturer of premium wooden doors located in Ambad MIDC, Nashik. Founded with a passion for quality craftsmanship, we have grown from a small workshop into one of the most trusted door manufacturing brands in Maharashtra.
+              Mahavir Doors is a leading manufacturer of premium wooden doors located in Ambad MIDC, Nashik. Founded with a passion for quality craftsmanship, we have grown from a small workshop into one of the most trusted door manufacturing brands in Maharashtra.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
               We are committed to delivering exceptional craftsmanship, superior materials, and innovative designs to residential, commercial, and industrial customers across the region.

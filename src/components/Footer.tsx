@@ -1,6 +1,6 @@
 import type { Page, SetPage } from '@/types'
 import { CONTACT_EMAIL } from '@/data'
-import { IconMail, IconMap, IconPhone } from '@/components/Icons'
+import { IconFacebook, IconInstagram, IconMail, IconMap, IconPhone, IconWhatsApp } from '@/components/Icons'
 import NavLink from '@/components/NavLink'
 
 export default function Footer({ setPage }: { setPage: SetPage }) {
@@ -17,15 +17,33 @@ export default function Footer({ setPage }: { setPage: SetPage }) {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div className="lg:col-span-1">
             <NavLink page="home" setPage={setPage} className="flex items-center gap-3 mb-4">
-              <img src="/assets/logo-sm.jpeg" alt="Mahavir Doors logo" className="w-11 h-11 rounded-lg object-cover" width={44} height={44} />
+              <img src="/assets/logo-sm-png.png" alt="Mahavir Doors logo" className="w-11 h-11 rounded-lg object-cover" width={44} height={44} />
               <div>
-                <div className="font-bold text-white text-sm font-heading">Mahaveer Doors</div>
+                <div className="font-bold text-white text-sm font-heading">Mahavir Doors</div>
                 <div className="text-xs text-golden">Premium Manufacturer</div>
               </div>
             </NavLink>
             <p className="text-gray-400 text-xs leading-relaxed mb-5">
               Crafting premium wooden doors for every home and business from our factory in Nashik, Maharashtra since 2009.
             </p>
+            <div className="flex items-center gap-2 mb-5" aria-label="Social media">
+              {[
+                { href: 'https://www.instagram.com/mahavirdoorsnsk/', label: 'Instagram', icon: <IconInstagram /> },
+                { href: 'https://www.facebook.com/mahavirdoorsnsk', label: 'Facebook', icon: <IconFacebook /> },
+                { href: 'https://wa.me/918669860987', label: 'WhatsApp', icon: <IconWhatsApp /> },
+              ].map(s => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="w-9 h-9 rounded-lg flex items-center justify-center text-golden border border-white/10 hover:bg-wood hover:text-white transition-colors"
+                >
+                  {s.icon}
+                </a>
+              ))}
+            </div>
             <address className="not-italic text-xs text-gray-500 space-y-2">
               <div className="flex items-start gap-2"><span className="text-golden mt-0.5"><IconMap /></span><span>Krushna Nagar, Datir Mala, Ambad MIDC, Nashik – 422010</span></div>
               <div className="flex items-center gap-2"><span className="text-golden"><IconPhone /></span><a href="tel:+918669860987" className="hover:text-white transition-colors">8669860987</a></div>

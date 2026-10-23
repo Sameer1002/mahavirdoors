@@ -117,7 +117,7 @@ export default function ContactPage() {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4 text-white text-2xl bg-wood">✓</div>
                 <h3 className="text-xl font-bold text-charcoal mb-3 font-heading">Enquiry Sent!</h3>
                 <p className="text-gray-500 text-sm max-w-xs">
-                  Thank you for contacting Mahaveer Doors. Our team will reach out to you within 24 hours.
+                  Thank you for contacting Mahavir Doors. Our team will reach out to you within 24 hours.
                 </p>
                 <button onClick={() => setSent(false)} className="mt-6 px-5 py-2.5 rounded text-sm font-bold text-white bg-wood">
                   Send Another Enquiry

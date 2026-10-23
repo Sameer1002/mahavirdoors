@@ -8,7 +8,7 @@ export default function WhyUsPreview({ setPage }: { setPage: SetPage }) {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
           <div className="text-xs font-bold tracking-widest uppercase mb-3 text-golden">Why Choose Us</div>
-          <h2 className="text-3xl lg:text-4xl font-bold text-charcoal font-heading">The Mahaveer Doors Difference</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-charcoal font-heading">The Mahavir Doors Difference</h2>
           <p className="text-gray-500 mt-3 max-w-xl mx-auto text-sm">We stand behind every door we manufacture with quality, expertise, and genuine customer care.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">

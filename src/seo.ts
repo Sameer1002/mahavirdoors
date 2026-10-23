@@ -96,7 +96,7 @@ export function pageUrl(page: Page) {
 
 export function logoUrl() {
   const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '')
-  return `${siteOrigin()}${base}/assets/logo-sm.jpeg`
+  return `${siteOrigin()}${base}/assets/logo-sm-png.png`
 }
 
 const BREADCRUMB_LABELS: Record<Page, string> = {
@@ -115,12 +115,15 @@ function localBusiness() {
   return {
     '@type': ['Organization', 'LocalBusiness', 'HomeAndConstructionBusiness'],
     name: SITE_NAME,
-    alternateName: 'Mahaveer Doors',
     url: siteOrigin() + pathFor('home'),
     logo: logoUrl(),
     image: logoUrl(),
     email: CONTACT_EMAIL,
     telephone: ['+91-86698-60987', '+91-96045-03054'],
+    sameAs: [
+      'https://www.instagram.com/mahavirdoorsnsk/',
+      'https://www.facebook.com/mahavirdoorsnsk',
+    ],
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Krushna Nagar, Datir Mala, Ambad MIDC',
@@ -186,13 +189,13 @@ export function buildJsonLd(page: Page) {
         ...(page === 'home'
           ? []
           : [
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: BREADCRUMB_LABELS[page],
-                item: url,
-              },
-            ]),
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: BREADCRUMB_LABELS[page],
+              item: url,
+            },
+          ]),
       ],
     },
   ]

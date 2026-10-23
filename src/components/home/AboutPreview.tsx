@@ -8,10 +8,10 @@ export default function AboutPreview({ setPage }: { setPage: SetPage }) {
         <div>
           <div className="text-xs font-bold tracking-widest uppercase mb-3 text-golden">About Us</div>
           <h2 className="text-3xl lg:text-4xl font-bold text-charcoal mb-6 gold-underline font-heading">
-            Welcome to Mahaveer Doors
+            Welcome to Mahavir Doors
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Mahaveer Doors is one of Nashik&apos;s most trusted manufacturers and suppliers of premium wooden doors and interior solutions. Located at Ambad MIDC, we specialize in crafting elegant, durable, and high-performance doors using advanced manufacturing technology and premium raw materials.
+            Mahavir Doors is one of Nashik&apos;s most trusted manufacturers and suppliers of premium wooden doors and interior solutions. Located at Ambad MIDC, we specialize in crafting elegant, durable, and high-performance doors using advanced manufacturing technology and premium raw materials.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
             From modern homes to large commercial projects, we provide customized door solutions that combine aesthetics, security, and long-lasting performance. Every door we craft is a testament to our commitment to quality and craftsmanship.

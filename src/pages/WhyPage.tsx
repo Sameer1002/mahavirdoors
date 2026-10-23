@@ -7,7 +7,7 @@ export default function WhyPage({ setPage }: { setPage: SetPage }) {
   const certs = ['ISI Certified Materials', 'ISO Quality Standards', 'BIS Approved Processes', 'Eco-Friendly Manufacturing']
   return (
     <>
-      <PageBanner title="Why Choose Us" subtitle="The reasons thousands of customers trust Mahaveer Doors" img={IMGS.brownDoor} />
+      <PageBanner title="Why Choose Us" subtitle="The reasons thousands of customers trust Mahavir Doors" img={IMGS.brownDoor} />
       <section className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">

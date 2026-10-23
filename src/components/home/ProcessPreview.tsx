@@ -4,9 +4,9 @@ import { IMGS } from '@/data'
 export default function ProcessPreview({ setPage }: { setPage: SetPage }) {
   const steps = ['Design Consultation', 'Material Selection', 'Precision Manufacturing', 'Quality Inspection', 'Finishing', 'Delivery']
   return (
-    <section className="py-20 lg:py-24 relative overflow-hidden bg-charcoal">
-      <img src={IMGS.cnc} alt="" className="absolute inset-0 w-full h-full object-cover opacity-5" />
-      <div className="relative max-w-7xl mx-auto px-6">
+    <section className="fixed-bg-section py-20 lg:py-24 relative overflow-hidden bg-charcoal">
+      <img src={IMGS.cnc} alt="" className="fixed-bg-img opacity-5" />
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
           <div className="text-xs font-bold tracking-widest uppercase mb-3 text-golden">How We Work</div>
           <h2 className="text-3xl lg:text-4xl font-bold text-white font-heading">Our Manufacturing Process</h2>

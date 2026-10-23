@@ -16,9 +16,9 @@ export default function Header({ page, setPage }: { page: Page; setPage: SetPage
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <nav className="max-w-7xl mx-auto px-4 lg:px-6 h-16 flex items-center justify-between" aria-label="Primary">
         <NavLink page="home" setPage={setPage} className="flex items-center gap-3 shrink-0">
-          <img src="/assets/logo-sm.jpeg" alt="Mahavir Doors logo" className="w-10 h-10 rounded-lg object-cover" width={40} height={40} />
+          <img src="/assets/logo-sm-png.png" alt="Mahavir Doors logo" className="w-10 h-10 rounded-lg object-cover" width={40} height={40} />
           <div className="text-left">
-            <div className="text-sm font-bold leading-none text-wood font-heading">Mahaveer Doors</div>
+            <div className="text-sm font-bold leading-none text-wood font-heading">Mahavir Doors</div>
             <div className="text-xs font-medium text-golden">Premium Manufacturer</div>
           </div>
         </NavLink>

@@ -101,8 +101,8 @@ export const SERVICES = [
 export const TESTIMONIALS = [
   { name: 'Rajesh Patil', location: 'Nashik', stars: 5, text: 'Excellent quality laminated doors with timely delivery. The finishing is top-class and the team was very professional throughout the entire process. Highly recommended for any home project.' },
   { name: 'Sunil Sharma', location: 'Pune', stars: 5, text: 'Best laminated doors in Nashik. The great finishing and the variety of designs available is impressive. We ordered 40 doors for our residential project and every single one was perfect.' },
-  { name: 'Priya Joshi', location: 'Mumbai', stars: 5, text: 'Professional team and very affordable pricing without compromising on quality. Our interior designer recommended Mahaveer Doors and we are absolutely delighted with the results.' },
-  { name: 'Vikram Mehta', location: 'Aurangabad', stars: 5, text: 'We used Mahaveer Doors for our hotel renovation project. The WPC doors they supplied for the bathrooms are waterproof and look absolutely premium. Great partnership!' },
+  { name: 'Priya Joshi', location: 'Mumbai', stars: 5, text: 'Professional team and very affordable pricing without compromising on quality. Our interior designer recommended Mahavir Doors and we are absolutely delighted with the results.' },
+  { name: 'Vikram Mehta', location: 'Aurangabad', stars: 5, text: 'We used Mahavir Doors for our hotel renovation project. The WPC doors they supplied for the bathrooms are waterproof and look absolutely premium. Great partnership!' },
   { name: 'Aarti Kulkarni', location: 'Nashik', stars: 5, text: 'The custom safety door they made for our home is stunning. The craftsmanship is excellent, the locking mechanism is solid, and the delivery was on time as promised. 5 stars!' },
 ]
 

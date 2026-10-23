@@ -6,9 +6,9 @@
     "index": true
   },
   "icons": {
-    "icon": "assets/logo-sm.jpeg"
+    "icon": "assets/logo-sm-png.png"
   },
   "openGraph": {
-    "image": "assets/logo-sm.jpeg"
+    "image": "assets/logo-sm-png.png"
   }
 }

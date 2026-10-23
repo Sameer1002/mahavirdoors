@@ -3,11 +3,11 @@ import { IMGS } from '@/data'
 
 export default function Hero({ setPage }: { setPage: SetPage }) {
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-charcoal">
-      <img src={IMGS.hero} alt="" className="absolute inset-0 w-full h-full object-cover" />
-      <div className="absolute inset-0 scrim-hero" />
+    <section className="hero-section relative h-screen min-h-[600px] flex items-center overflow-hidden bg-charcoal">
+      <img src={IMGS.hero} alt="" className="hero-bg-img" />
+      <div className="absolute inset-0 scrim-hero z-10" />
 
-      <div className="relative max-w-7xl mx-auto px-6 w-full pt-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-16">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase mb-6 border hero-badge">
             Premium Door Manufacturer — Nashik, Maharashtra
@@ -33,7 +33,7 @@ export default function Hero({ setPage }: { setPage: SetPage }) {
         </div>
       </div>
 
-      <div className="absolute bottom-8 right-8 hidden md:flex flex-col gap-2 items-end">
+      <div className="absolute bottom-8 right-8 hidden md:flex flex-col gap-2 items-end z-10">
         <div className="text-xs font-semibold text-white/50 tracking-widest">EST. 2009</div>
         <div className="w-12 h-0.5 bg-golden" />
       </div>

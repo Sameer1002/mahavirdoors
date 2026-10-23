@@ -101,7 +101,7 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
 
   const title = config.title ?? "Mahavir Doors | Best Door Manufacturer in India"
   const description = config.description ?? 'Mahavir Doors is the best door manufacturer in India. We offer a wide range of doors for your home and office. We are a one-stop solution for all your door needs.'
-  const favicon = config.icons?.icon ?? 'assets/logo-sm.jpeg'
+  const favicon = config.icons?.icon ?? 'assets/logo-sm-png.png'
   const socialImage = config.openGraph?.image ?? ''
   const language = sanitizeHtmlValue(config.language) || 'en'
   const googleAnalyticsId = sanitizeHtmlValue(config.analytics?.googleAnalyticsId)
